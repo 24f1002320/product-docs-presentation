@@ -1,11 +1,11 @@
-name: Build and Deploy Marp Slides
+name: Build and Deploy Marp Presentation
 
 on:
   push:
     branches: [ main ]
     paths:
-      - 'slides.md'
-      - '.github/workflows/marp.yml'
+      - "slides.md"
+      - ".github/workflows/marp.yml"
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
@@ -26,7 +26,10 @@ jobs:
       - name: Build Marp HTML
         run: |
           mkdir -p public
-          marp slides.md -o public/index.html --html
+          marp slides.md \
+            --html \
+            --allow-local-files \
+            -o public/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -34,8 +37,8 @@ jobs:
           path: public
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
     permissions:
       pages: write
       id-token: write
