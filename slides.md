@@ -34,11 +34,9 @@ This presentation demonstrates Marp features for maintainable documentation.
 
 ---
 
-<!-- REAL Marp background image directives -->
-<!-- _backgroundImage: https://picsum.photos/1600/900 -->
-<!-- _backgroundSize: cover -->
-
 # Architecture Diagram
+
+![bg](https://picsum.photos/1600/900)
 
 Product components overview shown with a background image.
 
