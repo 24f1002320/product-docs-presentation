@@ -34,9 +34,9 @@ This presentation demonstrates Marp features for maintainable documentation.
 
 ---
 
-# Architecture Diagram
-
 ![bg](bg.jpg)
+
+# Architecture Diagram
 
 Product components overview shown with a locally hosted background image.
 
