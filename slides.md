@@ -1,4 +1,5 @@
 ---
+marp: true
 title: Product Documentation Presentation
 author: Technical Writer
 theme: custom-theme
