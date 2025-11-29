@@ -26,7 +26,6 @@ footer {
 }
 </style>
 
-<!-- Slide 1 -->
 # Product Documentation Overview
 
 **Contact:** 24f1002320@ds.study.iitm.ac.in
@@ -35,9 +34,10 @@ This presentation demonstrates Marp features for maintainable documentation.
 
 ---
 
-<!-- Slide 2 with background image -->
-<!-- backgroundImage: url('https://picsum.photos/1600/900') -->
-<!-- backgroundSize: cover -->
+<!-- REAL Marp background image directives -->
+<!-- _backgroundImage: https://picsum.photos/1600/900 -->
+<!-- _backgroundSize: cover -->
+
 # Architecture Diagram
 
 Product components overview shown with a background image.
